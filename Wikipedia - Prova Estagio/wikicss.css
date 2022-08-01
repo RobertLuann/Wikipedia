@@ -1,0 +1,1200 @@
+/* Remover formatações padrões da pagina */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/* header da página */
+
+
+
+.header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    z-index: 2;
+}
+
+/* div bt_wikiglobo */
+
+.header .bt_sidebar
+{
+    margin-top: 10px;
+}
+.header .bt_sidebar button
+{
+    border-style: none;
+    cursor: pointer;
+    background: #fff;
+}
+.header .bt_sidebar button svg
+{
+    color: #555555;
+    transition: 0.2s;
+}
+.header .bt_sidebar button:hover svg
+{
+    color: #000;
+}
+.header .bt_wikiglobo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.header .bt_wikiglobo .wiki_globo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.header .bt_wikiglobo .wiki_globo .wiki_img a img
+{
+    width: 50px;
+    height: 50px;
+}
+.header .bt_wikiglobo .wiki_nome
+{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+/* div pesquisar */
+
+.header .pesquisar
+{
+    display: flex;
+    margin-right: 245px;
+    width: 480px;
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid #a2a9b1;
+    align-items: center;
+}
+.header .pesquisar .pesquisa_img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+}
+.header .pesquisar .pesquisa_img img
+{
+    width: 17.5px;
+    height: 17.5px;
+}
+.header .pesquisa_input input
+{
+    width: 370px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 28px;
+    border-style: none;
+}
+.header .pesquisar .pesquisa_btpesquisar button
+{
+    width: 78px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 28px;
+    border-style: none;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+.header .pesquisar:hover
+{
+    border: 1px solid #555555;
+}
+.header .pesquisar .pesquisa_btpesquisar button:hover
+{
+    color: #555555;
+}
+.header .pesquisar:hover .pesquisa_btpesquisar button
+{
+    opacity: 1;
+    border-left: 1px solid #555555;
+}
+
+/* div criar_conta */
+
+.header .criar_conta
+{
+    display: flex;
+    margin-top: 15px;
+    margin-right: 65px;
+    height: 30px;
+    align-items: center;
+}
+.header .criar_conta button:nth-child(1)
+{
+    border-style: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: bolder;
+    margin-right: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+.header .criar_conta button:last-child
+{
+    border-style: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+/* Sidebar da página */
+
+
+
+.sidebar
+{
+    position: absolute;
+    width: 343px;
+    margin-top: 100px;
+    height: 100%;
+    background: #ffffff;
+    margin-top: 100px;
+    z-index: 3;
+}
+.sidebar .container_sb
+{
+    position: fixed;
+    margin-top: 45px;
+    margin-left: 60px;
+    width: 220px;
+    height: 350px;
+    background: #ffffff;
+    padding: 7px;
+}
+.sidebar .container_sb h3
+{
+    margin-bottom: 15px;
+    color: #54595d;
+    font-weight: normal;
+    font-size: 0.875em;
+}
+.sidebar .container_sb ul
+{
+    list-style: none;
+}
+.sidebar .container_sb ul li
+{
+    margin-bottom: 10px;
+}
+.sidebar .container_sb ul li a
+{
+    text-decoration: none;
+    font-size: 0.875em;
+}
+.sidebar .container_sb ul li a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+/* Conteúdo da página */
+
+
+
+.content
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 343px;
+    width: 999px;
+    height: 100%;
+    background: #ffffff;
+    padding-right: 20px;
+}
+
+/* div titulo html5 */
+
+.content .titulo_html5
+{
+    width: 950px;
+}
+.content .titulo_html5::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 35px;
+    background: #a2a9b1;
+}
+.content .titulo_html5 h1
+{
+    font-size: 1.8em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+.content .titulo_html5 .links
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    width: 950px;
+    height: 40px;
+    border-bottom: 1px solid #eaecf0;
+}
+.content .titulo_html5 .links ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 16px;
+}
+.content .titulo_html5 .links ul li
+{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.content .titulo_html5 .links ul li a
+{
+    font-size: 0.8125em;
+    text-decoration: none;
+}
+.content .titulo_html5 .links ul li:first-child 
+{
+    border-bottom: 1px solid #000;
+}
+.content .titulo_html .links ul li:first-child a
+{
+    color: #000;
+}
+.content .titulo_html5 .links ul li:nth-child(2):hover,
+.content .titulo_html5 .links ul li:nth-child(3):hover
+{
+    border-bottom: 1px solid #0b00a1;
+}
+.content .titulo_html5 .links ul li:last-child 
+{
+    margin-right: 0px;
+}
+
+/* div subtitulo do html5 */
+
+.content .subtitulo 
+{
+    margin-top: 20px;
+    font-size: 12.8px;
+}
+
+/* div texto do html5 */
+
+.content .texto_html5
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+    width: 950px;
+    height: 600px;
+    background: #ffffff;
+}
+/* div container lateral html5 */
+.content .texto_html5 .container_html5
+{
+    width: 250px;
+    height: 400px;
+    padding: 5px;
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+}
+.content .texto_html5 .container_html5 .container_html5_titulo
+{
+    width: 240px;
+    height: 50px;
+    background: #b0c4de;
+}
+.content .texto_html5 .container_html5 .container_html5_titulo span
+{
+    position: absolute;
+    padding: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.content .texto_html5 .container_html5 .container_html5_titulo .arduino_img
+{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/ce/Arduino_ftdi_chip-1.png) no-repeat top right;
+    height: 100%;
+}
+.content .texto_html5 .container_html5 img
+{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.content .texto_html5 .container_html5 .container_html5_texto
+{
+    display: flex;
+    justify-content: space-between;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul
+{
+    list-style: none;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul li
+{
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul li a
+{
+    text-decoration: none;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul li a:hover
+{
+    text-decoration: underline;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul:last-child li
+{
+    margin-bottom: 6px;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul:last-child li:first-child
+{
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul:last-child li:first-child span
+{
+    border: 1px solid #eaecf0;
+}
+.content .texto_html5 .container_html5 .container_html5_texto ul:last-child li:nth-child(2) span
+{
+    border: 1px solid #eaecf0;
+}
+.content .texto_html5 .texto_html_pe p
+{
+    font-size: 0.875em;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+.content .texto_html5 .texto_html_pe span p
+{
+    position: absolute;
+    width: 950px;
+    line-height: 1.6;
+    font-size: 0.875em;
+}
+.content .texto_html5 .texto_html_pe span p #codigo_borda
+{
+    border: 1px solid #eaecf0;
+    background: #f8f9fa;
+}
+
+/* div titulo historia */
+
+.content .titulo_historia
+{
+    margin-top: 90px;
+    width: 950px;
+}
+.content .titulo_historia::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 27px;
+    background: #a2a9b1;
+}
+.content .titulo_historia h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto da historia */
+
+.content .texto_historia
+{
+    margin-top: 10px;
+    width: 950px;
+    font-size: 0.875em;
+}
+.content .texto_historia p
+{
+    line-height: 1.6;
+}
+
+/* div titulo da descricao */
+
+.content .titulo_descricao
+{
+    margin-top: 10px;
+    width: 950px;
+}
+.content .titulo_descricao::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 27px;
+    background: #a2a9b1;
+}
+.content .titulo_descricao h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto da descricao */
+
+.content .texto_descricao p
+{
+    line-height: 1.6;
+    font-size: 0.875em;
+}
+.content .texto_descricao p:first-child
+{
+    margin-top: 10px;
+}
+.content .texto_descricao ul
+{
+    margin-left: 20px;
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+/* div titulo exemplos */
+
+.content .titulo_exemplos
+{
+    margin-top: 10px;
+    width: 950px;
+}
+.content .titulo_exemplos::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_exemplos h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto dos exemplos */
+
+.content .texto_exemplos
+{
+    margin-top: 10px;
+}
+.content .texto_exemplos p
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+.content .texto_exemplos .container_exemplo
+{
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    height: 350px;
+    background: #f8f9fa;
+    border: 1px solid #f0f0f0;
+}
+.content .texto_exemplos .container_exemplo .containerlat_exemplo
+{
+    background-color: #f0f0f0;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.content .texto_exemplos .container_exemplo .containerlat_exemplo ul
+{
+    list-style: none;
+    line-height: 2;
+    font-size: 0.875em;
+}
+.content .texto_exemplos .container_exemplo .containerlat_exemplo ul li
+{
+    margin-left: 27px;
+    color: #728ab8;
+}
+.content .texto_exemplos .container_exemplo .containerlat_exemplo ul li:nth-child(10),
+.content .texto_exemplos .container_exemplo .containerlat_exemplo ul li:nth-child(11),
+.content .texto_exemplos .container_exemplo .containerlat_exemplo ul li:nth-child(12)
+{
+    margin-left: 20px;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo
+{
+    margin-bottom: 500px;
+    width: 950px;
+    height: 100px;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo pre
+{
+    line-height: 1.79;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo pre #cor_verde
+{
+    color: #508000;
+    font-weight: bold;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo pre #cor_1
+{
+    color: #bc7a00;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo pre #cor_2
+{
+    color: #ba2121;
+}
+.content .texto_exemplos .container_exemplo .container_conteudo pre #cor_3
+{
+    color: #7d9029;
+}
+.content .texto_exemplos p:last-child
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content .container_exemplo2
+{
+    width: 950px;
+    height: 350px;
+    background: #f8f9fa;
+    border: 1px solid #f0f0f0;
+    padding-top: 10px;
+}
+.content .container_exemplo2 pre
+{
+    margin-top: 10px;
+    margin-left: -70px;
+}
+.content .container_exemplo2 #cor_verde
+{
+    color: #508000;
+    font-weight: bold;
+}
+.content .container_exemplo2 #cor_1
+{
+    color: #bc7a00;
+}
+.content .container_exemplo2 #cor_2
+{
+    color: #ba2121;
+}
+.content .container_exemplo2 #cor_3
+{
+    color: #7d9029;
+}
+.content .container_exemplo2 #cor_4
+{
+    color: #698f8f;
+}
+
+/* div do titulo popularidade */
+
+.content .titulo_popularidade
+{
+    margin-top: 10px;
+    width: 950px;
+}
+.content .titulo_popularidade::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_popularidade h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto popularidade */
+
+.content .texto_popularidade
+{
+    margin-top: 10px;
+}
+.content .texto_popularidade p
+{
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+/* div titulo logo */
+
+.content .titulo_logohtml
+{
+    margin-top: 10px;
+    width: 950px;
+}
+.content .titulo_logohtml::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_logohtml h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto logo */
+
+.content .texto_logohtml
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 950px;
+    height: 240px;
+}
+.content .texto_logohtml .container_logohtml
+{
+    margin-top: 10px;
+    width: 150px;
+    height: 175px;
+    border: 1px solid #c8ccd1;
+    background: #f8f9fa;
+}
+.content .texto_logohtml .container_logohtml .container_logo_img img
+{
+    border: 1px solid #c8ccd1;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.content .texto_logohtml .container_logohtml .container_logotexto p
+{
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.content .texto_logohtml .texto_logohtml_pe p
+{
+    font-size: 0.875em;
+    line-height: 1.6;
+    padding-right: 20px;
+}
+.content .texto_logohtml .texto_logohtml_pe p:last-child
+{
+    position: absolute;
+    width: 950px;
+}
+
+/* div titulo novos elementos */
+
+.content .titulo_novoselementos
+{
+    margin-top: 10px;
+    width: 950px;
+}
+.content .titulo_novoselementos::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_novoselementos  h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto novos elementos */
+
+.content .texto_novoselementos
+{
+    margin-top: 10px;
+    width: 950px;
+    height: 1040px;
+}
+.content .texto_novoselementos p
+{
+    font-size: 0.875em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.content .texto_novoselementos table
+{
+    border-collapse: collapse;
+}
+.content .texto_novoselementos table tr th
+{
+    background: #eaecf0;
+}
+.content .texto_novoselementos table tr td
+{
+    background: #f8f9fa;
+}
+.content .texto_novoselementos table tr th,
+.content .texto_novoselementos table tr td
+{
+    line-height: 1.6;
+    font-size: 0.875em;
+    color: #202122;
+    border: 1px solid #a2a9b1;
+    height: 30px;
+    padding-left: 5px;
+}
+.content .texto_novoselementos table tr #td_border
+{
+    border: 1px solid #eaecf0;
+}
+
+/* div titulo ver tambem */
+
+.content .titulo_vertambem
+{
+    margin-top: 30px;
+    width: 950px;
+}
+.content .titulo_vertambem::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_vertambem h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto vertambem */
+
+.content .texto_vertambem
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 950px;
+}
+.content .texto_vertambem ul li
+{
+    line-height: 1.6;
+}
+.content .texto_vertambem ul li a
+{
+    text-decoration: none;
+    font-size: 0.875em;
+}
+.content .texto_vertambem ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* div titulo bibliografia */
+
+.content .titulo_bibliografia
+{
+    margin-top: 30px;
+    width: 950px;
+}
+.content .titulo_bibliografia::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_bibliografia h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto bibliografia */
+
+.content .texto_bibliografia
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 950px;
+}
+.content .texto_bibliografia ul li
+{
+    line-height: 1.6;
+    font-size: 0.875em;
+}
+.content .texto_bibliografia ul li a
+{
+    text-decoration: none;
+}
+.content .texto_bibliografia ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* div titulo referencias */
+
+.content .titulo_referencias
+{
+    margin-top: 30px;
+    width: 950px;
+}
+.content .titulo_referencias::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_referencias h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto referencias */
+
+.content .texto_referencias
+{
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 950px;
+    height: 280px;
+}
+.content .texto_referencias ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+.content .texto_referencias ul #referencias_p1
+{
+    width: 900px;
+    height: 260px;
+    padding-right: 10px;
+}
+.content .texto_referencias ul #referencias_p2
+{
+    margin-left: 10px;
+}
+.content .texto_referencias ul li
+{
+    list-style: decimal;
+    line-height: 1.6;
+    font-size: 12.6px;
+}
+.content .texto_referencias ul li a
+{
+    text-decoration: none;
+}
+.content .texto_referencias ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* div titulo ligacoes externas */
+
+.content .titulo_ligacoesexternas
+{
+    margin-top: 30px;
+    width: 950px;
+}
+.content .titulo_ligacoesexternas::before
+{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    margin-top: 30px;
+    background: #a2a9b1;
+}
+.content .titulo_ligacoesexternas h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Linux Libertine','Georgia','Times', serif;
+}
+
+/* div texto ligacoes externas */
+
+.content .texto_ligacoesexternas
+{
+    margin-top: 10px;
+    width: 950px;
+    height: 170px;
+}
+.content .texto_ligacoesexternas .primeiraparte_le
+{
+    display: flex;
+    justify-content: space-between;
+}
+.content .texto_ligacoesexternas .primeiraparte_le ul
+{
+    padding-left: 20px;
+}
+.content .texto_ligacoesexternas .primeiraparte_le ul li
+{
+    line-height: 1.6;
+    font-size: 0.875em;
+}
+.content .texto_ligacoesexternas .primeiraparte_le ul li a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .primeiraparte_le ul li a:hover
+{
+    text-decoration: underline;
+}
+.content .texto_ligacoesexternas .primeiraparte_le .container_commons
+{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #aaaaaa;
+    background: #f9f9f9;
+    font-size: 12.6px;
+    text-align: center;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+}
+.content .texto_ligacoesexternas .primeiraparte_le .container_commons img
+{
+    width: 22px;
+    height: 30px;
+}
+.content .texto_ligacoesexternas .primeiraparte_le .container_commons p a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .primeiraparte_le .container_commons p #cat
+{
+    font-style: italic;
+}
+.content .texto_ligacoesexternas .primeiraparte_le .container_commons p a:hover
+{
+    text-decoration: underline;
+}
+.content .texto_ligacoesexternas .container_ligex
+{
+    width: 950px;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    background: #ffffff;
+    border: 1px solid #a2a9b1;
+    margin-bottom: -1px;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ccccff;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul
+{
+    display: flex;
+    list-style-image: url(https://pt.wikipedia.org/w/skins/Vector/resources/common/images/bullet-icon.svg?d4515);
+    list-style-position: inside;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li
+{
+    margin-left: 5px;
+    font-size: 12.32px;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li:first-child
+{
+    list-style: none;
+    margin-top: 2px;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_titulo h1
+{
+    font-size: 14.0448px;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_titulo h1 a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_exp p
+{
+    font-size: 12.32px;
+    margin-right: 15px;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_exp p a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li a #cor1_le
+{
+    color: #4663ca;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li a #cor1_le:hover
+{
+    border-bottom: 1px solid #4663ca;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li a #cor2_le
+{
+    color: #dd3333;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_vde ul li a #cor2_le:hover
+{
+    border-bottom: 1px solid #dd3333;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_titulo h1 a
+{
+    color: #0645ad;
+}
+.content .texto_ligacoesexternas .container_ligex .container2_ligex .container_ligex_titulo h1 a
+{
+    color: #4645ad;
+}
+.content .texto_ligacoesexternas .container_categorias_le
+{
+    display: flex;
+    margin-top: 10px;
+    width: 950px;
+    height: 35px;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+}
+.content .texto_ligacoesexternas .container_categorias_le p a
+{
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .container_categorias_le ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: -15px;
+}
+.content .texto_ligacoesexternas .container_categorias_le ul li
+{
+    margin-left: 5px;
+    border-left: 1px solid #a2a9b1;
+}
+.content .texto_ligacoesexternas .container_categorias_le ul li a
+{
+    margin-left: 5px;
+    text-decoration: none;
+}
+.content .texto_ligacoesexternas .container_categorias_le ul li:first-child
+{
+    margin-left: 20px;
+    border-left: none;
+}
+.content .texto_ligacoesexternas .container_categorias_le ul li:first-child a
+{
+    margin-left: 0px;
+}
+.content .texto_ligacoesexternas .container_categorias_le p a:hover,
+.content .texto_ligacoesexternas .container_categorias_le ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* div footer */
+
+.content .footer
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -343px;
+    width: 1349px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.content .footer .footer_content
+{
+    font-size: 12px;
+    line-height: 16.8px;
+    padding-left: 15px;
+}
+.content .footer .footer_content::before
+{
+    content: '';
+    position: absolute;
+    width: 1269px;
+    margin-left: -15px;
+    margin-top: -10px;
+    height: 1px;
+    background: #a2a9b1;
+}
+.content .footer .footer_content p
+{
+    margin-bottom: 10px;
+}
+.content .footer .footer_content .contentfooter_div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .footer .footer_content .contentfooter_div ul
+{
+    display: flex;
+    list-style: none;
+}
+.content .footer .footer_content .contentfooter_div ul li
+{
+    margin-left: 10px;
+}
+.content .footer .footer_content .contentfooter_div ul li:first-child
+{
+    margin-left: 0px;
+}
+.content .footer .footer_content .contentfooter_div ul li a,
+.content .footer .footer_content p a
+{
+    text-decoration: none;
+}
+.content .footer .footer_content .contentfooter_div ul li a:hover,
+.content .footer .footer_content p a:hover
+{
+    text-decoration: underline;
+}
